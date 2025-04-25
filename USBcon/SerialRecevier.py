@@ -8,7 +8,7 @@ from libemg.shared_memory_manager import SharedMemoryManager
 
 ### --- Receptor de datos desde Serial --- ###
 class SensorReceiverSerial:
-    def __init__(self, port='COM9', baudrate=115200, channel_list=list(range(8)), buffer_size=2000):
+    def __init__(self, port='COM3', baudrate=115200, channel_list=list(range(8)), buffer_size=2000):
         self.port = port
         self.baudrate = baudrate
         self.channel_list = channel_list
